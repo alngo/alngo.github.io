@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - JEKYLL_BUILD_REVISION=${JEKYLL_BUILD_REVISION}
+      - PAGES_REPO_NWO=${PAGES_REPO_NWO}
