@@ -2,11 +2,13 @@ version: "3.9"
 services:
   jekyll:
     build:
+      context: ..
       dockerfile: "./docker/Dockerfile"
     ports:
-      - 4000:4000
+      - ${PORT}:${PORT}
     environment:
       - JEKYLL_BUILD_REVISION=${JEKYLL_BUILD_REVISION}
       - PAGES_REPO_NWO=${PAGES_REPO_NWO}
     volumes:
-      - .:/app
+      - ..:/jekyll
+    command: bundle exec jekyll serve --host 0.0.0.0 --port ${PORT}
