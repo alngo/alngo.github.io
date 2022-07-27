@@ -1,6 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+title: Alngo
 ---
 
 ## Welcome to GitHub Pages
@@ -44,3 +44,5 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 ### Command
 
 > docker compose --file docker/docker-compose.yml --project-directory . up
+
+Test
