@@ -1,4 +1,0 @@
----
-layout: note
-title: Notes
----
