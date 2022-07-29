@@ -10,7 +10,7 @@ Now, as a software developer, I aim to become a software craftsman!
 
 During this adventure, this blog will keep track of my progress.
 
-Feel free to browse some [logs](/_pages/logs.html)!
+Feel free to browse some [logs](/logs)!
 
 Cheers! :computer:
 
