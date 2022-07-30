@@ -20,8 +20,8 @@ permalink: /about
 <br/>
 - FullStack Developer @[Delpha](https://delpha.io/){:target="_blank"}
   - <sub>Apr 2020 - Aug 2020 (5 mos): Internship</sub>
-  - > The most intense months of my career.<br/>
-    > Back then, it was an early-stage startup sparking with [extreme ownership](https://www.youtube.com/watch?v=ljqra3BcqW){:target="_blank"}.
+  - > <sub>The most intense months of my career.</sub><br/>
+    > <sub>Back then, it was an early-stage startup sparking with [extreme ownership](https://www.youtube.com/watch?v=ljqra3BcqW){:target="_blank"}.</sub>
   - Setup the **development environment**:
     - Implement the best practices and Salesforce recommendation: **SFDX CLI**, **Scratch org**...
     - Implement the **CI/CD pipelines** with **Github Action** to include the<br/>
