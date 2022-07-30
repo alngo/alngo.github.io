@@ -18,6 +18,7 @@ minima:
     linkedin: 
       name: alex-ngo-b7853a164
       label: Alex Ngo 
+    instagram: devtea.io
 
 include:
   - _pages
