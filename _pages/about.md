@@ -14,8 +14,9 @@ permalink: /about
 # Experiences
 
 - Software Developer @[Ericsson](https://www.ericsson.com/en){:target="_blank"}
-  - <sub>Sep 2020 - Present (1 yr 11 mos): Permanent</sub>
-  - > Amazing!
+  - <sub>Sep 2020 - <span style="color:green">**Present**</span>: Permanent</sub>
+  - > <sub>Amazing!</sub>
+  - Work with **Maven**, **Java**, **Typescript**
 
 <br/>
 - FullStack Developer @[Delpha](https://delpha.io/){:target="_blank"}
@@ -29,6 +30,7 @@ permalink: /about
   - Worked on the product, which is a chatbot integrated in Salesforce.
     - with **Apex**, **SOQL**
 
+<br/>
 - Web Developer @[Ask Mona](https://www.askmona.fr/){:target="_blank"}
   - <sub>Mar 2018 – Dec 2019 (1 yr 8 mos): Internship > Freelance > Permanent Part-time</sub>
   - > <sub>My very first experience as a developer with a spectacular team of passionate.</sub>
