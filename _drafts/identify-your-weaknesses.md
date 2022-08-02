@@ -31,3 +31,7 @@ title: Identify your weaknesses
 - Dive Deep
 - Have Backbone; Disagree and Commit
 - Deliver Results
+
+# Engagement
+
+- Engage with other people

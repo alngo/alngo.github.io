@@ -191,8 +191,7 @@ sudo pacman -S xorg i3 firefox xorg-xinit xterm dmenu
 
 #firefox dpi
 About:config
-
-pixel 1.5
+layout.css.devPixelsPerPx: 
 
 # xinitrc
 

@@ -24,22 +24,22 @@ permalink: /about
   - > <sub>The most intense months of my career.</sub><br/>
     > <sub>Back then, it was an early-stage startup sparking with [extreme ownership](https://www.youtube.com/watch?v=ljqra3BcqW){:target="_blank"}.</sub>
   - Setup the **development environment**:
-    - Implement the best practices and Salesforce recommendation: **SFDX CLI**, **Scratch org**...
+    - Implement the best practices and Salesforce recommendations: **SFDX CLI**, **Scratch org**...
     - Implement the **CI/CD pipelines** with **Github Action** to include the<br/>
-      **unit test**, **formatting**, **static code analysis**...
-  - Worked on the product, which is a chatbot integrated in Salesforce.
-    - with **Apex**, **SOQL**
+      **unit test**, **formatting**, and **static code analysis**.
+  - Worked on the product, which is a chatbot integrated with Salesforce.
+    - done with **Apex**, **SOQL**.
 
 <br/>
 - Web Developer @[Ask Mona](https://www.askmona.fr/){:target="_blank"}
   - <sub>Mar 2018 – Dec 2019 (1 yr 8 mos): Internship > Freelance > Permanent Part-time</sub>
   - > <sub>My very first experience as a developer with a spectacular team of passionate.</sub>
-  - Worked on an **administration platform** to set the behavior, the skin and the content of the chatbots.
-    - done with **ReactJs**, **Sass**, **Styled-Component** and **Apollo GraphQL**.
+  - Worked on an **administration platform** to set the behavior, the skin, and the content of the chatbots.
+    - done with **ReactJs**, **Sass**, **Styled-Component**, and **Apollo GraphQL**.
   - Worked on a **web chat plugin**, customizable and integrated on the client website
     - done with **ReactJs** and **Socket.IO**.
-  - Worked on a **machine learning administration plateform** adapted to Ask Mona's NLP model.
-    - done with **ReactJs**, **Material-UI** and simple **REST** requests.
+  - Worked on a **machine learning administration platform** adapted to Ask Mona's NLP model.
+    - done with **ReactJs**, **Material-UI**, and simple **REST** requests.
 
 # Languages
 
