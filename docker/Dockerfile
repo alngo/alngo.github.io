@@ -1,6 +1,6 @@
 FROM ruby:alpine3.15
-RUN apk add build-base
-RUN gem install bundler jekyll
+RUN apk add build-base && \
+    gem install bundler jekyll
 WORKDIR /jekyll
 COPY ./Gemfile .
 RUN bundle install
