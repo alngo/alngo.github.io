@@ -1,0 +1,113 @@
+<aside class="sidebar collapsed" id="sidebar">
+    <div class="sidebar-header">
+        <button class="toggle-button" id="toggle-sidebar" aria-label="Toggle sidebar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo">
+            <span>{{ site.title }}</span>
+        </div>
+    </div>
+
+    <div class="sidebar-content">
+        <nav class="sidebar-nav">
+            <a href="/" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-label">Home</span>
+            </a>
+            <a href="/about" class="nav-item">
+                <i class="fa-solid fa-id-card"></i>
+                <span class="nav-label">About</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="sidebar-table">
+        <div class="table-title">
+            <span id="table-title">Table of content</span>
+        </div>
+        <nav class="toc" id="table-nav">
+            <ul id="table-nav-ul">
+            </ul>
+        </nav>
+    </div>
+
+    <div class="sidebar-footer">
+        {% if site.media.twitter %}
+        <a href="#" class="nav-item">
+            <i class="fa-brands fa-twitter"></i>
+            <span class=nav-label">Twitter</span>
+        </a>
+        {% endif %}
+        {% if site.media.linkedin %}
+        <a href="https://www.linkedin.com/in/{{site.media.linkedin}}/" target="_blank" class="nav-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class=nav-label">Linkedin</span>
+        </a>
+        {% endif %}
+        {% if site.media.github %}
+        <a href="https://github.com/{{site.media.github}}" target="_blank" class="nav-item">
+            <i class="fa-brands fa-github"></i>
+            <span class=nav-label">Github</span>
+        </a>
+        {% endif %}
+        {% if site.media.facebook %}
+        <a href="#" class="nav-item">
+            <i class="fa-brands fa-facebook"></i>
+            <span class=nav-label">Facebook</span>
+        </a>
+        {% endif %}
+        {% if site.media.instagram %}
+        <a href="#" class="nav-item">
+            <i class="fa-brands fa-instagram"></i>
+            <span class=nav-label">Instagram</span>
+        </a>
+        {% endif %}
+        {% if site.media.tiktok %}
+        <a href="#" class="nav-item">
+            <i class="fa-brands fa-tiktok"></i>
+            <span class=nav-label">tiktok</span>
+        </a>
+        {% endif %}
+    </div>
+</aside>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sidebar = document.getElementById('sidebar');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('collapsed');
+            document.body.classList.toggle('sidebar-open');
+        }
+
+        function generateLi(tag, id, header) {
+            return '<li class="tag-' + tag + '"><a href="#' + id + '">' + header + '</a></li>';
+        }
+
+        // Generate Table of Content
+        const isAPost = document.getElementById('post');
+        const table = document.getElementById('table-nav-ul');
+        const title = document.getElementById("table-title");
+
+        if (isAPost) {
+            const post_content = document.getElementById('post-content');
+            const headers = ["H1", "H2", "H3"];
+            for (const child  of post_content.children) {
+                const tag = child.tagName;
+                if (headers.includes(tag)) {
+                    const id = child.id;
+                    const header = child.innerHTML;
+                    table.innerHTML += generateLi(tag.toLowerCase(), id, header);
+                }
+            }
+            for (const child of table.children) {
+                child.addEventListener('click', toggleSidebar);
+            }
+            title.innerHTML = "Table of Content";
+        } else {
+            table.innerHTML = "";
+            title.innerHTML = "";
+        }
+    })
+</script>

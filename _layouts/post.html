@@ -2,4 +2,41 @@
 layout: default
 ---
 
+<div class="wrapper">
+    <article class="post" id="post">
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="post-meta">
+                <span class="post-date">{{ page.date | date: "%-d %B %Y" }}</span>
+            </div>
+            <div class="tags">
+                {% if post %}
+                {% assign categories = post.categories %}
+                {% else %}
+                {% assign categories = page.categories %}
+                {% endif %}
+                {% for category in categories %}
+                <!-- <a href="{{site.baseurl}}/categories/#{{category|slugize}}" class="tag">{{category}}</a> -->
+                <a href="#" class="tag">{{category}}</a>
+                {% unless forloop.last %}&nbsp;{% endunless %}
+                {% endfor %}
+            </div>
+        </header>
 
+        <div class="post-content" id="post-content">
+            {{ content }}
+        </div>
+
+        <div class="pagination">
+            {% if page.previous.url %}
+            <a class="previous" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+                    Post</span></a>
+            {% endif %}
+            <span></span>
+            {% if page.next.url %}
+            <a class="next" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
+                    Post</span> &rarr;</a>
+            {% endif %}
+        </div>
+    </article>
+</div>

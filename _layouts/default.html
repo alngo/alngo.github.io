@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     {% include head.html %}
     <body>
-        <header class="header">
-            <div class="header__container">
-                <div class="header__logo">
-                    <a href="/" class="logo">{{ site.title }}</a>
-                </div>
-                {% include navbar.html %}
-            </div>
-        </header>
-        <main>
-            <section class="hero">
-                <div class="container">
-                    {{ content }}
-                </div>
-            </section>
-        </main>
-        {% include footer.html %}
-    </body>
+        <div class="container">
+            <!-- Sidebar/Header -->
+            {% include header.html %}
+            {% include aside.html %}
 
+            <!-- Main content -->
+            <main class="main">
+                {{ content }}
+            </main>
+
+            <!-- Footer -->
+            {% include footer.html %}
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Sidebar toggle functionality
+                const sidebar = document.getElementById('sidebar');
+                const toggleButton = document.getElementById('toggle-sidebar');
+
+                function toggleSidebar() {
+                    sidebar.classList.toggle('collapsed');
+                    document.body.classList.toggle('sidebar-open');
+                }
+
+                toggleButton.addEventListener('click', toggleSidebar);
+            });
+        </script>
+    </body>
 </html>
+
+
