@@ -4,7 +4,7 @@ title: Resume
 date: 2025-03-23
 author: "Alngo"
 permalink: /about/
-categories: [pro]
+categories: [Software Engineer, Technical Leadership, Project Management]
 ---
 
 ## Summary
