@@ -7,7 +7,7 @@ permalink: /about/
 categories: [Software Engineer, Technical Leadership, Project Management]
 ---
 
-## Summary
+# Summary
 
 Hi!,
 
@@ -27,7 +27,8 @@ Now, I primarily focus on communication and leadership skills.
 
 This is the mindset I carry with me every day.
 
-## Experience
+# Experience
+
 ## Ericsson
 
 At Ericsson, I worked on two projects that sharpened my development skills and
@@ -82,15 +83,15 @@ I used ReactJs, Apollo GraphQL and diverse UI tool such as Sass, Styled-Componen
 - A customizable chat plugin easily integrable for the client.
 - A machine learning platform tailored for the Ask Mona's AI model
 
-## Education
+# Education
 
-### 42
+## 42
 
 The education model focuses on project-based learning and teamwork.
 - The main programming language was C
 - I learned to read the manual, research effectively and discuss with peers.
 
-### Fine-art
+## Fine-art
 
 A contemporary fine art school with a strong focus on student's autonomy.
 - I was interested in technology and digital art.
