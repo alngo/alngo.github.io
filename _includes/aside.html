@@ -1,6 +1,6 @@
-<aside class="sidebar collapsed" id="sidebar">
-    <div class="sidebar-header">
-        <button class="toggle-button" id="toggle-sidebar" aria-label="Toggle sidebar">
+<aside class="aside collapsed" id="aside">
+    <div class="aside-header">
+        <button class="toggle-button" id="toggle-aside" aria-label="Toggle aside">
             <i class="fa-solid fa-bars"></i>
         </button>
         <div class="logo">
@@ -8,8 +8,8 @@
         </div>
     </div>
 
-    <div class="sidebar-content">
-        <nav class="sidebar-nav">
+    <div class="aside-content">
+        <nav class="aside-nav">
             <a href="/" class="nav-item">
                 <i class="fa-solid fa-house"></i>
                 <span class="nav-label">Home</span>
@@ -21,7 +21,7 @@
         </nav>
     </div>
 
-    <div class="sidebar-table">
+    <div class="aside-table">
         <div class="table-title">
             <span id="table-title">Table of content</span>
         </div>
@@ -31,7 +31,7 @@
         </nav>
     </div>
 
-    <div class="sidebar-footer">
+    <div class="aside-footer">
         {% if site.media.twitter %}
         <a href="#" class="nav-item">
             <i class="fa-brands fa-twitter"></i>
@@ -70,19 +70,34 @@
         {% endif %}
     </div>
 </aside>
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<div class="aside-overlay" id="aside-overlay"></div>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const sidebar = document.getElementById('sidebar');
+        // aside toggle functionality
+        const aside = document.getElementById('aside');
+        const overlay = document.getElementById('aside-overlay');
+        const toggleButton = document.getElementById('toggle-aside');
 
-        function toggleSidebar() {
-            sidebar.classList.toggle('collapsed');
-            document.body.classList.toggle('sidebar-open');
+        function toggleaside() {
+            aside.classList.toggle('collapsed');
+            document.body.classList.toggle('aside-open');
+        }
+
+        toggleButton.addEventListener('click', toggleaside);
+        overlay.addEventListener('click', toggleaside);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const aside = document.getElementById('aside');
+
+        function toggleaside() {
+            aside.classList.toggle('collapsed');
+            document.body.classList.toggle('aside-open');
         }
 
         function generateLi(tag, id, header) {
-            return '<li class="tag-' + tag + '"><a href="#' + id + '">' + header + '</a></li>';
+            return '<li class="tag-' + tag + '"><a href="#' + id + '" class="nav-item">' + header + '</a></li>';
         }
 
         // Generate Table of Content
@@ -102,9 +117,10 @@
                 }
             }
             for (const child of table.children) {
-                child.addEventListener('click', toggleSidebar);
+                child.addEventListener('click', toggleaside);
             }
             title.innerHTML = "Table of Content";
+
         } else {
             table.innerHTML = "";
             title.innerHTML = "";

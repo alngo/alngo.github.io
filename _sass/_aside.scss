@@ -2,18 +2,15 @@
   transition: $property $duration $timing;
 }
 
-$sidebar-width: 16rem;
-$sidebar-collapsed-width: 4rem;
-
-.sidebar {
-  grid-area: menu;
+.aside {
   position: fixed;
+  top: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
   background-color: $color-white;
   border-right: 1px solid $color-border;
-  width: $sidebar-width;
+  width: $aside-width;
   z-index: 10;
   @include transition(width);
 
@@ -25,12 +22,12 @@ $sidebar-collapsed-width: 4rem;
   }
 
   &.collapsed {
-    width: $sidebar-collapsed-width;
+    width: $aside-collapsed-width;
 
     .logo span,
     .nav-item span,
-    .sidebar-table .table-title,
-    .sidebar-table .toc {
+    .aside-table .table-title,
+    .aside-table .toc {
       display: none;
     }
   }
@@ -41,7 +38,7 @@ $sidebar-collapsed-width: 4rem;
   }
 }
 
-.sidebar-header {
+.aside-header {
   height: 4rem;
   border-bottom: 1px solid $color-border;
   display: flex;
@@ -79,7 +76,7 @@ $sidebar-collapsed-width: 4rem;
   }
 }
 
-.sidebar-table {
+.aside-table {
   flex: 1;
   overflow-y: auto;
   border-top: 1px solid $color-border;
@@ -141,7 +138,7 @@ $sidebar-collapsed-width: 4rem;
 }
 
 
-.sidebar-nav {
+.aside-nav {
   padding: 0.5rem 0.75rem;
   display: flex;
   flex-direction: column;
@@ -165,12 +162,12 @@ $sidebar-collapsed-width: 4rem;
   }
 }
 
-.sidebar-footer {
+.aside-footer {
   padding: 0.75rem 1rem;
   border-top: 1px solid $color-border;
 }
 
-.sidebar-overlay {
+.aside-overlay {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -178,6 +175,6 @@ $sidebar-collapsed-width: 4rem;
   display: none;
 }
 
-body.sidebar-open .sidebar-overlay {
+body.aside-open .aside-overlay {
   display: block;
 }
