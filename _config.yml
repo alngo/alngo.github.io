@@ -1,8 +1,7 @@
 title: Alngo
-subtitle: A software engineering journey~
+subtitle: Engineering journey~
 description: >- # this means to ignore newlines until "baseurl:"
-  My focus has evolved from being an excellent individual contributor to becoming an effective team player. 
-  Now, I primarily focus on communication and leadership skills.
+  Thanks for reading!
 signature: Cheers~!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.alngo.com" # the base hostname & protocol for your site, e.g. http://example.com

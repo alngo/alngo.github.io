@@ -13,12 +13,12 @@ Hi!,
 
 I'm Alex, a passionate software engineer.
 
-Throughout my career, I've had the opportunity to grow as an engineer, working from front-end development to system architecture.
-These experiences have shaped me into a strong individual contributor who can tackle challenges in any area.
+Throughout my career, I've had the opportunity to grow as an engineer, working from front-end development to system engineering.
+These experiences have shaped me into a strong individual contributor who can tackle challenges in any area and understand concepts in any area.
 
 Today, I work as a software engineer with both technical leadership and project management responsibilities.
-My day-to-day work involves guiding a team of six in implementing system requirements.
-I also coordinate with multiple teams and communicate across various departments within the company to deliver new features.
+My day-to-day work involves guiding a team of six in implementing system requirements and
+and coordinate with multiple teams across various departments within the company to deliver new features.
 
 My focus has evolved from being an excellent individual contributor to becoming an effective team player. 
 Now, I primarily focus on communication and leadership skills.

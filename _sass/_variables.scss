@@ -45,6 +45,9 @@ $content-width: 800px;
 $on-palm: 600px;
 $on-laptop: 800px;
 
+$aside-width: 16rem;
+$aside-collapsed-width: 4rem;
+
 // Mixins
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;

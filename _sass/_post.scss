@@ -3,16 +3,10 @@
   max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 $spacing-unit / 2;
-
-  @include media-query($on-laptop) {
-    padding: 0 $spacing-unit / 3;
-  }
 }
 
 // Post list
 .post-list {
-  list-style: none;
   margin-left: 0;
 
   .post-item {
