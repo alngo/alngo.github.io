@@ -21,6 +21,11 @@
     }
   }
 
+  .aside-table .aside-nav {
+    display: none;
+  }
+
+
   &.collapsed {
     width: $aside-collapsed-width;
 
@@ -29,6 +34,10 @@
     .aside-table .table-title,
     .aside-table .toc {
       display: none;
+    }
+
+    .aside-table .aside-nav {
+      display: inherit;
     }
   }
 

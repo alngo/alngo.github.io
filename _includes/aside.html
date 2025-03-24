@@ -29,6 +29,8 @@
             <ul id="table-nav-ul">
             </ul>
         </nav>
+        <nav class="aside-nav" id="table-nav-compressed">
+        </nav>
     </div>
 
     <div class="aside-footer">
@@ -100,9 +102,20 @@
             return '<li class="tag-' + tag + '"><a href="#' + id + '" class="nav-item">' + header + '</a></li>';
         }
 
+        function generateA(tag, id, header) {
+            const tagToIcon = {
+                'h1': '<i class="fa-solid fa-circle"></li>',
+                'h2': '<i class="fa-regular fa-circle-dot"></li>',
+                'h3': '<i class="fa-regular fa-circle"></li>',
+            };
+            const label = '<span class="nav-label">' + header + '</span>';
+            return '<a href="#' + id + '" class="nav-item">' + tagToIcon[tag] + label + '</a></li>';
+        }
+
         // Generate Table of Content
         const isAPost = document.getElementById('post');
         const table = document.getElementById('table-nav-ul');
+        const tableCompressed = document.getElementById('table-nav-compressed');
         const title = document.getElementById("table-title");
 
         if (isAPost) {
@@ -114,6 +127,7 @@
                     const id = child.id;
                     const header = child.innerHTML;
                     table.innerHTML += generateLi(tag.toLowerCase(), id, header);
+                    tableCompressed.innerHTML += generateA(tag.toLowerCase(), id, header);
                 }
             }
             for (const child of table.children) {
