@@ -23,16 +23,6 @@ h2 {
   padding-bottom: 0.3em;
 }
 
-.heading {
-  h2 {
-    @include relative-font-size(1.8);
-    font-weight: normal;
-    border-bottom: none;
-    padding-bottom: none;
-  }
-}
-
-
 h3 {
   @include relative-font-size(1.5);
 }
@@ -80,12 +70,10 @@ dd {
   margin-bottom: $spacing-unit / 2;
 }
 
-// Small text styles
 small {
   font-size: 0.8em;
 }
 
-// Text formatting
 strong, b {
   font-weight: 600;
 }
