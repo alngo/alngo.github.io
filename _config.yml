@@ -11,7 +11,7 @@ media:
   linkedin: alex-ngo-b7853a164
 
 sass:
-  style: compressed
+  style: expanded
 
 include: ['_pages']
 
