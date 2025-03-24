@@ -13,16 +13,9 @@ html {
 }
 
 .container {
-  display: grid;
-  grid-template-areas:
-  "menu header"
-  "menu main"
-  "menu footer";
-  grid-template-rows: auto;
 }
 
 .header {
-  grid-area: header;
   position: relative;
   padding-left: $sidebar-collapsed-width;
   height: 4rem;
@@ -36,14 +29,12 @@ html {
 }
 
 .main {
-  grid-area: main;
   padding: 1rem;
   padding-left: $sidebar-collapsed-width + 1rem;
   min-height: 100vh;
 }
 
 .footer {
-  grid-area: footer;
   padding: 1rem;
   padding-left: $sidebar-collapsed-width + 1rem;
   border-top: 1px solid $color-border;
