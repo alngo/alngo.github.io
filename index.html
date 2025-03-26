@@ -14,20 +14,16 @@ layout: default
                 </header>
                 <div class="post-meta">
                     <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
-                    {% if post.categorie %}
-                    <span class="post-categories">
-                        (categorie)
-                    </span>
-                    {% endif %}
-                    <div class="excerpt">
-                        {{ post.excerpt }}
-                    </div>
                 </div>
-                {% if post.categorie %}
                 <div class="tags">
-                    (tags)
+                    {% for category in post.categories %}
+                    <span href="#" class="tag">{{category}}</span>
+                    {% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}
                 </div>
-                {% endif %}
+                <div class="excerpt">
+                    {{ post.excerpt }}
+                </div>
             </a>
         </article>
         {% endfor %}

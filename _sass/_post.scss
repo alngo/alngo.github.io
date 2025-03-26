@@ -13,8 +13,11 @@
     margin-bottom: $spacing-unit;
   }
 
+  .post-title {
+    margin-bottom: 0px;
+  }
+
   .post-meta {
-    font-size: 0.9em;
     color: $light-text-color;
     margin-bottom: $spacing-unit / 4;
   }
@@ -32,8 +35,6 @@
 
 // Post
 .post {
-  margin-bottom: $spacing-unit * 2;
-
   .post-header {
     margin-bottom: $spacing-unit;
   }
@@ -42,7 +43,7 @@
     @include relative-font-size(2.5);
     letter-spacing: -1px;
     line-height: 1.2;
-    margin-bottom: $spacing-unit / 4;
+    margin-bottom: $spacing-unit / 2;
 
     @include media-query($on-laptop) {
       @include relative-font-size(2);
@@ -50,8 +51,8 @@
   }
 
   .post-meta {
-    font-size: 0.9em;
     color: $light-text-color;
+    margin-bottom: 15px;
   }
 
   .post-content {

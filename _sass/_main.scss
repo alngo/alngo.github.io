@@ -2,11 +2,11 @@
 @import "reset";
 @import "variables";
 @import "base";
-@import "components";
 @import "typography";
-@import "post";
 @import "syntax";
+@import "components";
 @import "aside";
+@import "post";
 
 html {
   scroll-behavior: smooth;
@@ -19,7 +19,7 @@ html {
   position: relative;
   padding-left: $aside-collapsed-width;
   height: 4rem;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid $border-color;
   display: flex;
   justify-content: center;
 
@@ -36,7 +36,7 @@ html {
 .main {
   padding: 2rem 1rem;
   padding-left: $aside-collapsed-width + 1rem;
-  min-height: 100vh;
+  min-height: 100%;
 
   @include media-query($on-palm) {
     padding: 0.3rem;
@@ -47,9 +47,9 @@ html {
 .footer {
   padding: 1rem;
   padding-left: $aside-collapsed-width + 1rem;
-  border-top: 1px solid $color-border;
-  background-color: $color-background-dark;
-  color: $color-text-light;
+  border-top: 1px solid $border-color;
+  background-color: $background-color-dark;
+  color: $light-text-color;
   display:flex;
   flex-direction: column;
 
