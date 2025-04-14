@@ -9,89 +9,99 @@ categories: [Software Engineer, Technical Leadership, Project Management]
 
 # Summary
 
-Hi!,
+Hi!
 
-I'm Alex, a passionate software engineer.
+I'm Alex, a software engineer dedicated to solve business problem with deliberate programming and clear communication.
 
-Throughout my career, I've had the opportunity to grow as an engineer, working from front-end development to system engineering.
-These experiences have shaped me into a strong individual contributor who can tackle challenges in any area and understand concepts in any area.
+I’m driven by the principles of software craftsmanship, Clean Code, and the mindset of a Pragmatic Programmer.
+My experiences varies from front-end, back-end and for now I'm in system engineering.
 
-Today, I work as a software engineer with both technical leadership and project management responsibilities.
-My day-to-day work involves guiding a team of six in implementing system requirements and
-and coordinate with multiple teams across various departments within the company to deliver new features.
+These exposures to problem made me an adaptable individual contributor.
+I've grown as a strong individual contributor and an effective Team Member using my past experiences.
+I believe we can achieve anything with the right mindset and being open to the possibilities.
 
-My focus has evolved from being an excellent individual contributor to becoming an effective team player. 
-Now, I primarily focus on communication and leadership skills.
-
-> "Moving forward together" 
-
-This is the mindset I carry with me every day.
+Moving forward together is what I try to keep in mind everyday.
 
 # Experience
 
 ## Ericsson
 
-At Ericsson, I worked on two projects that sharpened my development skills and
-provided practical and pragmatic insights into best practices.
+TC Observability, 
+- Instrument the 4G/5G system, which means.. make the 4G/5G system understandable through KPI, Events, Metrics.
+Role: Software Engineer, Tech Leader and Project Manager 
+Tools: C++, Erlang, Bash Script, Python, Communication, a heavy usage of todo list, excel and powepoint.
 
-### Traffic Control - Observability
+Key responsibilities:
+Achievement:
 
-- I act as a Technical Leader archetype. My responsability extend to analyse
-- requirements, define the implementation steps, and enhancing the team's
-- technical skills.
- 
-- I continue to make contributions while utilizing C++, Erlang, Python and Bash
-- within a Linux environment.
+Equipment Configuration Tool 
+- Build a platform to configure Ericsson Radio System.
+- Much likely a web application with a front-end and a back-end.
+Role: Full Stack Engineer
+Tools: Typescript, Java, Bash Script
 
-### Equipment Configuration Tool
+Key responsibilities:
+Achievement:
 
-- I actively participate as a software engineer, making contributions to the
-- codebase using tools such as Gerrit, Git, and programming languages like
-- Java, TypeScript, and Bash scripting.
+CloudRAN Observability Data Backend Research
+- A Proof of Concept for an Observability Data Backend
+Role: Research
+Tools: Docker, K8s
 
-- I've been given the responsibility to ensure quality by being appointed as
-- one of the final reviewer before a commit can be submitted on main branch.
+Key responsibilities:
+Achievement:
+
+Key responsibilities
+
+- Individual Contributor
+Contribute with Java, C++ and provide code review following Clean Code and Pragmatic Programmer practices.
+I also contribute to enhance the developer experience by writing some scripts using Python and Bash.
+
+- Technical Lead
+Break down the requirement into smaller item and plan the implementation to minimize dependency.
+Guide the team with the implementation and provide support when needed.
+
+- Project Management
+Lead a project from a coordinator standpoint, synchronizing documentation and working across several team to achieve a common goal.
+Report to the Project Manager
+
+Achievement
+- Key Contributor Award 2023
+- Impact Award 2024
+- Exceptional impact 3 year in a row.
+- Global Tech Talent
 
 ## Delpha
 
-Delpha was an early-stage startup aiming to provides a chatbot embedded in
-Salesforce CRM. I was constantly challenged as a software developer and had to
-switch into different role.
+Very early stage and fast growing startup.
+Take away: Ownership
 
-### Setting up the development environment and workflow for the team
+Key responsibilities
+- Individual Contributor
+Contribute to the source code with Apex
+- DevOps
+Contribute to the tooling with Bash script and Python
 
-- Best practices according to Salesforce ( SFDX CLI, Packaging )
-- Setting up the CI/CD with Github Action, Heroku Pipeline.
-unit testing, linting, formatting, naming convention...
-
-### Development on the core product
-
-- use of Apex, a Java-like language
-- use of SOQL, a SQL-like language
+Achievement
 
 ## Ask Mona
 
-Ask Mona Studio develops chatbots for museums and cultural institutions.
-I was in charge of three projects from the beginning to the end of my contract.
-These projects were a deep dive into the front-end and project management.
+I joined during the early stage phase of this startup as an intern.
+Certainly did a lot of mistake and write spaghetti code but I also learned a lot about software engineering.
+Take away: Clean code, speak up and commitment.
 
-I used ReactJs, Apollo GraphQL and diverse UI tool such as Sass, Styled-Component, Material-UI.
+Key responsibilities
+- Individual Contributor
+Repsonsible 
+- Project Management
+Responsible of all the front-end
 
-### Front-end Engineer
-
-- An administration platform used to personalize the chatbots behavior.
-- A customizable chat plugin easily integrable for the client.
-- A machine learning platform tailored for the Ask Mona's AI model
+Achievement
 
 # Education
 
-## 42
+# 42
+Read the manual
 
-The education model focuses on project-based learning and teamwork.
-- The main programming language was C
-- I learned to read the manual, research effectively and discuss with peers.
-
-## Fine-art
-
-A contemporary fine art school with a strong focus on student's autonomy.
-- I was interested in technology and digital art.
+# Fine-art
+Own you career

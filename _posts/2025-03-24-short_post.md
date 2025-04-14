@@ -1,10 +1,20 @@
 ---
 layout: post
-title: "A short post"
+title: "System simplified"
 date: 2025-03-24
 author: "Alngo"
 excerpt: A little post
 categories: [jekyll, themes, carnet]
 ---
 
-A short post
+Back then, 
+Imagine an old-school operator room,
+
+socket
+    tcp
+    udp
+        ip
+            http
+            ethernet
+
+

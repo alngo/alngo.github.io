@@ -11,6 +11,10 @@
 
   .post-item {
     margin-bottom: $spacing-unit;
+    margin-top: $spacing-unit;
+    padding: 0rem 1rem;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
   }
 
   .post-title {
